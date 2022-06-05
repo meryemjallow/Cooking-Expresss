@@ -1,0 +1,79 @@
+﻿@model IEnumerable<Recipe_Portal.Models.Recipe>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<link href="~/Content/recipe.css" rel="recipe1" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<h2>Added recipes infos</h2>
+
+<p>
+    @Html.ActionLink("Add a new recipe", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.RecipeName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Category)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ImageUrl)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CookingTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ingredients)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Steps)
+        </th>
+        @*<th>
+                @Html.DisplayNameFor(model => model.Image)
+            </th>*@
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RecipeName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImageUrl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CookingTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ingredients)
+            </td>
+            <td>
+                @Html.ActionLink("View the Recipe", "Infos", new { id = item.RecipeID })
+            </td>
+            <td>
+                @*<img src="@Html.DisplayFor(modelItem => item.ImageUrl)" width="80" height="50"/>*@
+                @*@Html.DisplayFor(modelItem => item.Image)*@
+                <img src="@Url.Content(item.ImageUrl)" width="80" height="50" />
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.RecipeID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.RecipeID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.RecipeID })
+            </td>
+        </tr>
+    }
+
+</table>

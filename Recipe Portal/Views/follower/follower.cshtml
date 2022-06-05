@@ -1,0 +1,329 @@
+﻿<!DOCTYPE html>
+<html>
+<header>
+    <link href="~/Content/recipe.css" rel="recipe1" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+              .grid-container {
+                 background-color: #0B5498;
+                 padding: 6px;
+
+              }
+              body {
+                font-family: Arial;
+                font-size: 10px;
+              }
+
+              .grid-container > div {
+                font-family: 'Heebo', sans-serif;
+                font-family: 'Mochiy Pop P One', sans-serif;
+                font-family: 'Poppins', sans-serif;
+                color:#FFF8EF;
+                width: 100%;
+                text-align: center;
+                font-size: 30px;
+              }
+              .grid-container2 {
+                background-color: #0B5498;
+                padding: 6px;
+
+              }
+
+              .grid-container2 > div {
+                font-family: 'Heebo', sans-serif;
+                font-family: 'Mochiy Pop P One', sans-serif;
+                font-family: 'Poppins', sans-serif;
+                color:#FFF8EF;
+                width: 100%;
+                text-align: center;
+                font-size: 30px;
+              }
+              *{
+                box-sizing: border-box;
+                margin: 0;
+                padding:0;
+            }
+            .cell{
+                width: 33%;
+                height:350px;
+                margin: 0 15px;
+                overflow: hidden;
+                border-radius: 8px;
+            }
+              .cell img{
+                  width: 100%;
+                  height: 350px;
+                  object-fit: cover;
+                  display: block;
+              }
+
+
+        .contain {
+            width: 20%;
+            margin: 25px 15px;
+            margin-bottom: 35px;
+        }
+
+
+
+            .contain .content {
+                border-radius: 5px;
+                background: #0B5498; /* Black background with 0.5 opacity */
+                color: #FFF8EF;
+                width: 253px;
+                padding: 7px;
+            }
+
+
+
+            /***************************************************************************************************************/
+
+
+            .card {
+              box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+              transition: 0.3s;
+              margin-right: 0px;
+              width: 220px;
+              height:240px;
+              border-radius: 10px;
+            }
+
+            .card:hover {
+              box-shadow: 0 8px 16px 0 rgba(0,0,0,1.2);
+            }
+
+            .containerOfCards {
+              padding: 10px 16px;
+              font-family: 'Heebo', sans-serif;
+              font-family: 'Mochiy Pop P One', sans-serif;
+              font-family: 'Poppins', sans-serif;
+
+              height:50px;
+            }
+            .circular_image {
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              overflow: hidden;
+
+              position:relative;
+              left:25px;
+              bottom:-15px;
+
+            }
+            .circular_image img{
+              width:100%;
+            }
+            /*******************************************************************************************************/
+            .checked {
+              color: #FF6525;
+              text-shadow: 0 0 3px #FF6525, 0 0 5px #FF6525;
+            }
+
+              h4{
+                color: #0B5498;
+              }
+
+        #footer {
+            position: fixed;
+            padding: 10px 10px 0px 10px;
+            bottom: 0;
+            width: 85%;
+            /* Height of the footer*/
+            height: 90px;
+            background: grey;
+            background: whitesmoke;
+            font-size: 20px;
+        }
+
+    </style>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</header>
+
+<body>
+
+    <div class="grid-container2">
+        <div>What does our followers think about us?</div>
+    </div>
+    <br>
+    <br>
+
+    <div class="main-carousel">
+        <div class="contain">
+            <div class="card">
+                <div class="circular_image">
+                    <img src="~/imagesrecipe/Me.png" alt="Avatar" width="50px" ; height="50px">
+                </div>
+                <div style="position:relative; left:40px; bottom:35px;">
+                    <h4><b>Metehan Timur</b></h4>
+                </div>
+                <div style="position:relative; left:105px; bottom:30px;">
+                    <p>Istanbul, TR</p>
+                </div>
+                <div class="containerOfCards">
+
+                    <p>Nice recipes.I really enjoyed.</p>
+                    <br>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+        </div>
+        <div class="contain">
+            <div class="card">
+                <div class="circular_image">
+                    <img src="~/imagesrecipe/D.png" alt="Avatar" width="50px" ; height="50px">
+                </div>
+                <div style="position:relative; left:40px; bottom:35px;">
+                    <h4><b>Derya Beşikoğlu</b></h4>
+                </div>
+                <div style="position:relative; left:105px; bottom:30px;">
+                    <p>Istanbul, TR</p>
+                </div>
+                <div class="containerOfCards">
+
+                    <p>Great work. Everything is clearly explained. Thank you !</p>
+                    <br>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+        </div>
+        <div class="contain">
+            <div class="card">
+                <div class="circular_image">
+                    <img src="~/imagesrecipe/im3.jpg" alt="Avatar" width="60px" ; height="60px">
+                </div>
+                <div style="position:relative; left:40px; bottom:35px;">
+                    <h4><b>Abdoulaye Bah</b></h4>
+                </div>
+                <div style="position:relative; left:105px; bottom:30px;">
+                    <p>Istanbul, TR</p>
+                </div>
+                <div class="containerOfCards">
+
+                    <p>Cooking Express is the best.I followed the steps mentioned and i got what i expected. Thank you. </p>
+                    <br>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            </div>
+        </div>
+        <div class="contain">
+            <div class="card">
+                <div class="circular_image">
+                    <img src="~/imagesrecipe/im1.jpg" alt="Avatar" width="60px" ; height="60px">
+                </div>
+                <div style="position:relative; left:40px; bottom:35px;">
+                    <h4><b>Kübra Nur</b></h4>
+                </div>
+                <div style="position:relative; left:105px; bottom:30px;">
+                    <p>Istanbul, TR</p>
+                </div>
+                <div class="containerOfCards">
+
+                    <p>Wawou thank you so much. I had some guest and i was stress because i didn't know what to cook. But then this website saved my life</p>
+                    <br>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+        </div>
+        <div class="contain">
+            <div class="card">
+                <div class="circular_image">
+                    <img src="~/imagesrecipe/A.png" alt="Avatar" width="60px" ; height="60px">
+                </div>
+                <div style="position:relative; left:40px; bottom:35px;">
+
+                    <h4><b>Ahmed Abeideh</b></h4>
+
+                </div>
+                <div style="position:relative; left:105px; bottom:30px;">
+                    <p>Istanbul, TR</p>
+                </div>
+                <div class="containerOfCards">
+
+                    <p>Thank you Cooking Express for explaining clearly all the steps we need to follow.</p>
+                    <br>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script type="text/javascript">
+        $('.main-carousel').flickity({
+            cellAlign: 'left',
+            wrapAround: true,
+        });
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="footer">
+
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="https://www.facebook.com/CuisineBienMangeBien/?ref=pages_you_manage" class="fa fa-facebook"></a>
+                <a href="https://youtube.com/channel/UCNDC_TmipYKyjHADjZGNQ4g" class="fa fa-youtube"></a>
+                <a href="https://www.instagram.com/m.dalan.diallo/" class="fa fa-instagram"></a>
+                <a href="https://twitter.com/epicurious" class="fa fa-twitter"></a>
+
+            </div>
+            <div class="col-sm-4">
+                <p>
+                    <strong>
+                        Author: Mariama and Amal<br>
+                        <a href="mailto:cookingexpress@gmail.com">cookingexpress@gmail</a>
+
+                    </strong>
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <strong>
+                    <p>&copy; @DateTime.Now.Year - Cooking Express</p>
+                </strong>
+
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

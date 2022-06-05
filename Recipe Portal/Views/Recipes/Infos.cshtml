@@ -1,0 +1,59 @@
+﻿@model Recipe_Portal.Models.Recipe
+
+
+<link href="~/Content/recipe.css" rel="recipe1" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<h1>
+    <strong>@Html.DisplayFor(model => model.RecipeName)</strong>
+</h1>
+
+
+<div>
+    <h4>Recipe</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Category)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category)
+        </dd>
+
+        <hr />
+        <dt>
+            @Html.DisplayNameFor(model => model.CookingTime)<br />
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CookingTime)<br />
+        </dd>
+        <hr />
+        <dt>
+            @Html.DisplayNameFor(model => model.Ingredients)<br />
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ingredients)<br />
+        </dd>
+        <hr />
+        <dt>
+            @Html.DisplayNameFor(model => model.Steps)<br />
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Steps)<br />
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to Recipes", "FindMoreRecipe")
+</p>
+
+
+

@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/Content/recipe.css" rel="recipe1" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @*<title>@ViewBag.Title - My ASP.NET Application</title>*@
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="~/imagesrecipe/logo.jpg" class="img-center" height="55" width="150" />
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Find Recipes", "FindRecipe", "FindRecipe")</li>
+                    <li>@Html.ActionLink("Follower Comments", "follower", "follower")</li>
+                    <li>@Html.ActionLink("Add Recipes", "Addrecipe", "Recipes")</li>
+                    <a href="https://www.facebook.com/CuisineBienMangeBien/?ref=pages_you_manage" class="fa fa-facebook"></a>
+                    <a href="https://youtube.com/channel/UCNDC_TmipYKyjHADjZGNQ4g" class="fa fa-youtube"></a>
+                    <a href="https://www.instagram.com/m.dalan.diallo/" class="fa fa-instagram"></a>
+                    <a href="https://twitter.com/epicurious" class="fa fa-twitter"></a>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+            
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        @*<hr />*@
+        <footer>
+            @*<a href="https://www.facebook.com/CuisineBienMangeBien/?ref=pages_you_manage" class="fa fa-facebook"></a>
+            <a href="https://youtube.com/channel/UCNDC_TmipYKyjHADjZGNQ4g" class="fa fa-youtube"></a>
+            <a href="https://www.instagram.com/m.dalan.diallo/" class="fa fa-instagram"></a>
+            <a href="https://twitter.com/epicurious" class="fa fa-twitter"></a>*@
+            @*<p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>*@
+        </footer>
+
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

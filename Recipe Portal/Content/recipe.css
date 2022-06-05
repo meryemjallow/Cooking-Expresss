@@ -1,0 +1,95 @@
+﻿
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&display=swap%22");
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Mochiy+Pop+P+One&family=Poppins:ital,wght@1,600&display=swap');
+            
+
+
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+
+/*body {*/
+    /*background-image: url('/imagesrecipe/6.jpg');*/
+    /*min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}*/
+
+h4 {
+    background-color: none;
+    color: white;
+    text-align: center;
+    background: none;
+    font-family: "Sofia", sans-serif;
+}
+
+#first {
+    background-color: none;
+    color: black;
+    text-align: left;
+    background: none;
+    font-family: "Sofia", sans-serif;
+    margin-right: auto;
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 18px;
+}
+
+#second {
+    background-color: none;
+    color: black;
+    text-align: right;
+    background: none;
+    font-family: "Sofia", sans-serif;
+    margin-left: auto;
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+}
+
+#third {
+    position: absolute;
+    top: 25%;
+    width: 90%;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-family: "Sofia", sans-serif;
+}
